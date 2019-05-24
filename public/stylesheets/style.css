@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+section{
+  float: left;
+  background: gainsboro;
+  padding: 10px;
+  margin: 25px;
+  width: 210px;
+  box-shadow: 3px 3px 5px;
+  min-height: 350px;
+
+}
+
+section:first-of-type{
+  margin-left: 0;
+}
+
+section:last-of-type{
+  margin-right: 0;
+}
+
+section h2{
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+
+}
+
+.insert{
+  background: darkorange;
+}
+
+.load{
+  background: gold;
+}
+
+.update{
+  background: darkseagreen;
+}
+
+.delete{
+  background: red;
+}
+
+.input label{
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+input,
+button{
+  font: inherit;
+  border-radius: 50px;
+}
+
+
+button {
+  margin-top: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px #34495e;
+  border-radius: 50px;
+  background: #ecf0f1;
+  cursor: pointer;
+  align-content: center;
+}
+
+button:hover {
+  background: deepskyblue;
+}
+
+.details {
+  margin: 10px 0;
+  padding: 5px;
+  background: #95a5a6;
+  border: 1px solid black;
+}

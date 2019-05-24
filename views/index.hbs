@@ -1,0 +1,99 @@
+<h1>MY DATA</h1>
+
+<section class="insert">
+    <h2> Insert Details</h2>
+
+    <form action="/insert" method="post">
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="input">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+        </div>
+
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div class="input">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender">
+        </div>
+
+       <button type="submit">Insert</button>
+    </form>
+
+</section>
+
+
+
+<section class="load">
+    <h2> Load details</h2>
+    <a href="/load">Load Data</a>
+    <div>
+        {{# each items }}
+            <article class="details">
+                <div>ID: {{ this._id }}</div>
+                <div>Name: {{ this.name }}</div>
+                <div>Age: {{ this.age }}</div>
+                <div>Email: {{ this.email }}</div>
+                <div>Gender: {{ this.gender }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
+
+
+<section class="update">
+    <h2> Update  Details</h2>
+    <form action="/update" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="input">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+        </div>
+
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div class="input">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender">
+        </div>
+
+        <button type="submit">Update</button>
+    </form>
+
+
+</section>
+
+
+
+<section class="delete">
+    <h2> Delete  Details</h2>
+    <form action="/delete" method="post">
+        <div class="input">
+            <label for="ID">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">Delete</button>
+
+    </form>
+
+</section>
+
+
