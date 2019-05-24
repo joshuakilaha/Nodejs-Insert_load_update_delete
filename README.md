@@ -18,3 +18,7 @@ On the project terminal install the following:
   
  #NOTE- mongodb server should be started
  
+
+x-special/nautilus-clipboard
+copy
+file:///root/screenshots/Nodejs%20My%20Data.png
